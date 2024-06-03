@@ -1,0 +1,19 @@
+[package]
+name = "TokenMessenger"
+version = "1.0.0"
+authors = []
+
+[addresses]
+module_b = "_"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dependencies.MessageTransmitter]
+local = "../module_a"
+
+[dev-dependencies]
